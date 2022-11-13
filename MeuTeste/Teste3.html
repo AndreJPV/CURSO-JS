@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinamento</title>
+
+    <style>
+        body {
+            background-color: aqua;
+        
+        }
+        div {
+            font: normal 20pt Arial;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>TESTES</h1>
+    </header>
+    <div> Número:
+        <input type="number" name="txtnum" id="txtnum">
+        <input type="button" value="Verificar" onclick="Teste()">
+    </div>
+    <div>
+        <select name="resultado" id="resultado" size="10">
+            <option">Resultados.</option>
+        </select>
+    </div>
+    <div id="res"> O relatório aparecerá aqui.</div>
+    <footer>
+
+    </footer>
+
+    <script>
+        function Teste() {
+            let num = document.querySelector('input#txtnum')
+            let tes = document.querySelector('select#resultado')
+            let rel = document.querySelector('div#res')
+            let numr = Number(num.value)
+
+            let ary = []
+            ary.push(numr)
+            for(numr in ary) {
+                alert(`Os valores do array são: ${ary}`)
+            }
+
+            //Assitir vídeo pra ver a resolução da atividade.
+            
+
+
+            let item = document.createElement('option')
+            item.text = (`O número digitado foi ${numr}.`)
+            tes.appendChild(item)
+
+
+            /* ESTUDAR E PATRICAR MAIS ARRAY. PARA ENTENDER COMO UTILIZAR O ARRAY NESSE 
+            EXERCÍCIO E DEPOIS UTILIZAR AS FUNÇÕES PARA CONSEGUIR EXIBIR O RELATÓRIO.*/
+        }
+
+    </script>
+</body>
+</html>

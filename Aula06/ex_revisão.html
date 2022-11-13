@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owner Practice</title>
+    <style>
+        body {
+            background-color: rgb(128, 124, 124);
+            color: black; /* Essa é a forma de escrever um comentário no Css*/
+            font: normal 20pt Arial;
+        }
+        h1 {
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <h1>AJsorare</h1> <!--Essa é a fomra de colocar comentário no Html-->
+    <p>Dicas de jogadores com potencial de lucro.</p>
+    <script>
+        window.alert('Você tem conta no Sorare?')
+        window.confirm('Já comprou alguma carta?') //Próxima revisão tentar colocar variável na frente do comando.
+       var time_sorare = window.prompt('Qual o nome do seu time?') /*Tentar fazer alguma relação de acordo com a variável utilizada acima.*/
+        window.alert('Seu time (' + time_sorare + ') será adicionado no nosso grupo exclusivo. Seja Bem vindo!')
+        var l5 = parseInt(window.prompt('Digite a pontuação do L5 do seu melhor jogador'))
+        var l15 = parseInt(window.prompt('Agora digite a pontuação do L15 desse mesmo jogador'))
+        var soma_l5_l15 = (l5) + (l15)
+        window.alert('A soma dos valores é ' + soma_l5_l15)
+        window.alert(`Seu time ${time_sorare} tem o melhor jogador com a pontuação de L5 (${l5}) e L15 (${l15}). Isso dá uma total de ${soma_l5_l15} pontos.`)
+        var nome = window.prompt('Qual o seu nome?')
+        var preço_time = parseFloat(window.prompt(`Qual o valor em dólar do seu time ${time_sorare}`))
+        document.write(`Olá <strong>${nome.toUpperCase()}</strong>, </br> Seu time ${time_sorare.toLowerCase()} tem ${time_sorare.length} letras e o valor de mercado é ${preço_time.toFixed(2).replace('.',',')}.`)
+        document.write(` Em dólar o preço é ${preço_time.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'})}`)
+        
+
+   </script>
+</body>
+</html>
